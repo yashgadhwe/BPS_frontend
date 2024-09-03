@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Collection Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Your Logo</div>
+        <button class="predict-btn">Predict Travelling Costs</button>
+    </header>
+
+    <!-- Body -->
+    <main>
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Travelling Costs Predictor</h1>
+            <p class="breadcrumb">Home > Info Collection Page</p>
+        </div>
+
+        <!-- Description -->
+        <p class="description">Please fill out the form below to get your travel cost prediction:</p>
+
+        <!-- Form -->
+        <form class="info-form">
+            <div class="form-group">
+                <label for="from">Where from?</label>
+                <input type="text" id="from" name="from" placeholder="Select the place" required>
+            </div>
+            <div class="arrow-icon">&#8594;</div>
+            <div class="form-group">
+                <label for="to">Where to?</label>
+                <input type="text" id="to" name="to" placeholder="Select the place" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date-from">Dates from?</label>
+                <input type="date" id="date-from" name="date-from" required>
+            </div>
+            <div class="form-group">
+                <label for="date-to">Date to?</label>
+                <input type="date" id="date-to" name="date-to" required>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget to travel</label>
+                <select id="budget" name="budget" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>How many people?</label>
+                <div class="cards">
+                    <label class="card">
+                        <input type="radio" name="people" value="single" required>
+                        <img src="single-icon.png" alt="Single">
+                        <p>Single</p>
+                    </label>
+                    <label class="card">
+                        <input type="radio" name="people" value="couple">
+                        <img src="couple-icon.png" alt="Couple">
+                        <p>Couple</p>
+                    </label>
+                    <label class="card">
+                        <input type="radio" name="people" value="family">
+                        <img src="family-icon.png" alt="Family">
+                        <p>Family</p>
+                    </label>
+                    <label class="card">
+                        <input type="radio" name="people" value="friends">
+                        <img src="friends-icon.png" alt="Friends">
+                        <p>Friends</p>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
