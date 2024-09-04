@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info Collection Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Your Logo</div>
-        <button class="predict-btn">Predict Travelling Costs</button>
+        <div class="logo">Budget Traveller</div>
+        <a href="prediction.html" class="predict-btn">Predict Travelling Costs</a>
     </header>
 
     <!-- Body -->
@@ -18,11 +18,12 @@
         <!-- Banner -->
         <div class="banner">
             <h1>Travelling Costs Predictor</h1>
+            <p >Please fill out the form below to get your travel cost prediction</p>
             <p class="breadcrumb">Home > Info Collection Page</p>
         </div>
 
         <!-- Description -->
-        <p class="description">Please fill out the form below to get your travel cost prediction:</p>
+        <p class="description">Get the trip expenses including transportation, accommodation, foods & drinks, activities and more.</p>
 
         <!-- Form -->
         <form class="info-form">
@@ -30,7 +31,7 @@
                 <label for="from">Where from?</label>
                 <input type="text" id="from" name="from" placeholder="Select the place" required>
             </div>
-            <div class="arrow-icon">&#8594;</div>
+            <div class="arrow-icon">&#x2B07;</div>
             <div class="form-group">
                 <label for="to">Where to?</label>
                 <input type="text" id="to" name="to" placeholder="Select the place" required>
@@ -59,28 +60,29 @@
                 <div class="cards">
                     <label class="card">
                         <input type="radio" name="people" value="single" required>
-                        <img src="single-icon.png" alt="Single">
-                        <p>Single</p>
+                        <img src="image/backpacker.png" alt="Single">
+                        <p>Solo</p>
                     </label>
                     <label class="card">
                         <input type="radio" name="people" value="couple">
-                        <img src="couple-icon.png" alt="Couple">
+                        <img src="image/travel.png" alt="Couple">
                         <p>Couple</p>
                     </label>
                     <label class="card">
                         <input type="radio" name="people" value="family">
-                        <img src="family-icon.png" alt="Family">
+                        <img src="image/family.png" alt="Family">
                         <p>Family</p>
                     </label>
                     <label class="card">
                         <input type="radio" name="people" value="friends">
-                        <img src="friends-icon.png" alt="Friends">
+                        <img src="image/travel (1).png" alt="Friends">
                         <p>Friends</p>
                     </label>
                 </div>
             </div>
+            
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Predict Costs</button>
         </form>
     </main>
 

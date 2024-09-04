@@ -3,124 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Dropdown</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        details {
-            margin-bottom: 10px;
-        }
-
-        summary {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .card-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-
-        .card {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            width: 48%;
-        }
-
-        .card-left, .card-right {
-            width: 48%;
-        }
-
-        .card-left {
-            background-color: #f9f9f9;
-        }
-
-        .card-right {
-            background-color: #e9e9e9;
-        }
-    </style>
+    <title>Prediction Page</title>
+    <link rel="stylesheet" href="style/stylep.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Budget Traveller</div>
+        <a class="predict-btn">Predict Travelling Costs</a>
+    </header>
 
-    <details open>
-        <summary>Day 1</summary>
-        <div class="card-container">
-            <div class="card card-left">
-                <h3>Left Card</h3>
-                <p>Information for Day 1, left side.</p>
-            </div>
-            <div class="card card-right">
-                <h3>Right Card</h3>
-                <p>Information for Day 1, right side.</p>
+    <!-- Body -->
+    <main>
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Travelling Cost Prediction</h1>
+            <p class="breadcrumb">Home > Info Collection Page > Prediction</p>
+            <div class="location-info">
+                <p>Location: <span id="location">Destination Name</span></p>
+                <p>Start Date: <span id="start-date">YYYY-MM-DD</span></p>
+                <p>End Date: <span id="end-date">YYYY-MM-DD</span></p>
             </div>
         </div>
-    </details>
 
-    <details open>
-        <summary>Day 2</summary>
-        <div class="card-container">
-            <div class="card card-left">
-                <h3>Left Card</h3>
-                <p>Information for Day 2, left side.</p>
-            </div>
-            <div class="card card-right">
-                <h3>Right Card</h3>
-                <p>Information for Day 2, right side.</p>
-            </div>
-        </div>
-    </details>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <details open>
+                <summary>Day 1</summary>
+                <div class="card">
+                    <h3>Getting There</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the travel arrangements for day 1.</p>
+                        <div class="price">$100</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Accommodation</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the accommodation for day 1.</p>
+                        <div class="price">$150</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Food</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the food arrangements for day 1.</p>
+                        <div class="price">$50</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Transportation</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the transportation for day 1.</p>
+                        <div class="price">$30</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Activities</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the activities for day 1.</p>
+                        <div class="price">$70</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Miscellaneous</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of miscellaneous expenses for day 1.</p>
+                        <div class="price">$20</div>
+                    </div>
+                </div>
+            </details>
 
-    <details open>
-        <summary>Day 3</summary>
-        <div class="card-container">
-            <div class="card card-left">
-                <h3>Left Card</h3>
-                <p>Information for Day 3, left side.</p>
-            </div>
-            <div class="card card-right">
-                <h3>Right Card</h3>
-                <p>Information for Day 3, right side.</p>
-            </div>
-        </div>
-    </details>
+            <details>
+                <summary>Day 2</summary>
+                <div class="card">
+                    <h3>Getting There</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the travel arrangements for day 2.</p>
+                        <div class="price">$120</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Accommodation</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the accommodation for day 2.</p>
+                        <div class="price">$140</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Food</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the food arrangements for day 2.</p>
+                        <div class="price">$60</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Transportation</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the transportation for day 2.</p>
+                        <div class="price">$40</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Activities</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of the activities for day 2.</p>
+                        <div class="price">$80</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Miscellaneous</h3>
+                    <div class="separator"></div>
+                    <div class="content">
+                        <p>Description of miscellaneous expenses for day 2.</p>
+                        <div class="price">$25</div>
+                    </div>
+                </div>
+            </details>
 
-    <details open>
-        <summary>Day 4</summary>
-        <div class="card-container">
-            <div class="card card-left">
-                <h3>Left Card</h3>
-                <p>Information for Day 4, left side.</p>
-            </div>
-            <div class="card card-right">
-                <h3>Right Card</h3>
-                <p>Information for Day 4, right side.</p>
-            </div>
-        </div>
-    </details>
+            <!-- Add similar structure for Day 3 to Day 5 -->
+        </section>
 
-    <details open>
-        <summary>Day 5</summary>
-        <div class="card-container">
-            <div class="card card-left">
-                <h3>Left Card</h3>
-                <p>Information for Day 5, left side.</p>
-            </div>
-            <div class="card card-right">
-                <h3>Right Card</h3>
-                <p>Information for Day 5, right side.</p>
-            </div>
-        </div>
-    </details>
+        <!-- Summary Table -->
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Category</th>
+                    <th>Predicted Costs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Getting There</td>
+                    <td><strong>$100</strong></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Accommodation</td>
+                    <td><strong>$150</strong></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Food</td>
+                    <td><strong>$50</strong></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Transportation</td>
+                    <td><strong>$30</strong></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Activities</td>
+                    <td><strong>$70</strong></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Miscellaneous</td>
+                    <td><strong>$20</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td><strong>$420</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
