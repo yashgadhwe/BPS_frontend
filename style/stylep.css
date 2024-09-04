@@ -51,7 +51,7 @@ main {
 
 .banner {
     position: relative;
-    background: url('image/prediction.jpg') no-repeat center center/cover;
+    background: url('../image/prediction.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
