@@ -146,9 +146,9 @@ main {
     cursor: pointer;
     display: inline-block;
     padding: 15px;
-    border: 0.1px solid gray; /* Initial border is transparent */
+    border: 0.1px solid gray; /* Start with a transparent border */
     border-radius: 10px;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    transition: border-color 0.3s ease, border-width 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .card input[type="radio"] {
@@ -162,52 +162,30 @@ main {
     transition: transform 0.3s ease;
 }
 
+.card p {
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
 .card input[type="radio"]:checked + img {
     transform: scale(1.1);
+}
+
+.card input[type="radio"]:checked + p {
+    color: #00BFFF; /* Change text color when selected */
 }
 
 .card input[type="radio"]:checked + img + p {
     color: #00BFFF; /* Change text color when selected */
 }
 
-/* .card input[type="radio"]:checked + img {
-    border-color: #00BFFF; /* Change image border when selected *
-} */
-
-.card input[type="radio"]:checked + img + p + div {
-    border-color: #00BFFF; /* Change card border when selected */
-    border: 1px solid black;
-}
-
-.card input[type="radio"]:checked + img {
-    transform: scale(1.1);
-}
-
-.card input[type="radio"]:checked + p {
-    font-weight: bold; /* Make text bold when selected */
-}
-
-.card input[type="radio"]:checked + img + p {
-    color: #0c3947; /* Change text color when selected */
-}
-
-.card input[type="radio"]:checked + img + p + div {
-    /* border-color: #00BFFF; Change card border when selected */
-    border: 1px solid black;
-}
-
-.card input[type="radio"]:checked + img {
-    transform: scale(1.1);
-}
-
-.card input[type="radio"]:checked + p {
-    font-weight: bold; /* Make text bold when selected */
-}
-
-.card input[type="radio"]:checked ~ .card {
-    border-color: #00BFFF; /* Highlight the card when selected */
+.cards input[type="radio"]:checked {
+    border-color: #000102; /* Change border color when selected */
+    border-width: 4px; /* Increase border width when selected */
+    border: solid;
     background-color: rgba(0, 191, 255, 0.1); /* Optional: add a subtle background color */
 }
+
 
 .submit-btn {
     background-color: #00bfff;
